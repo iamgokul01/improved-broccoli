@@ -1,0 +1,109 @@
+/* Write CSS here */
+* {
+  bordder: 1px solid red;
+}
+@media (min-width: 768px) {
+  .app-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+    background-size: contain; /* Change this property */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 80vw;
+    height: 90vh;
+    font-family: Roboto;
+  }
+
+  .stopwatch-flexbox {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+  }
+  .stopwatch {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-subtitle {
+    display: flex;
+    align-items: center;
+  }
+  .btns-controller {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .button {
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .start-btn {
+    background-color: #1db05f;
+  }
+  .stop-btn {
+    background-color: #ef0d36;
+  }
+  .reset-btn {
+    background-color: #eaa800;
+  }
+}
+
+.stopwatch-flexbox {
+  box-shadow: 0px 4px 16px 0px #;
+}
+
+@media (max-width: 767px) {
+  .app-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+    background-size: contain; /* Change this property */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    font-family: Roboto;
+  }
+
+  .stopwatch-flexbox {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .stopwatch {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-subtitle {
+    display: flex;
+    align-items: center;
+  }
+  .btns-controller {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .button {
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .start-btn {
+    background-color: #1db05f;
+  }
+  .stop-btn {
+    background-color: #ef0d36;
+  }
+  .reset-btn {
+    background-color: #eaa800;
+  }
+}
