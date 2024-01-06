@@ -29,8 +29,11 @@ class Stopwatch extends Component {
         seconds += 1
       }
       console.log(seconds)
-
-      const timerText = `${min}:${seconds}`
+      let formattedSeconds = seconds
+      if (seconds < 10) {
+        formattedSeconds = `0${seconds}`
+      }
+      const timerText = `${min}:${formattedSeconds}`
       this.setState({
         liveCountdown: timerText,
         min,
@@ -71,6 +74,7 @@ class Stopwatch extends Component {
                 type="button"
                 className="button start-btn"
                 onClick={this.startWatch}
+                disabled={isStarted}
               >
                 Start
               </button>
